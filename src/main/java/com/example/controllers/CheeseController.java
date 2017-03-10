@@ -28,4 +28,10 @@ public class CheeseController {
         model.addAttribute("title", "My Cheeses");
         return "cheese/index";
     }
+
+    @RequestMapping(value = "add")
+    public String displayAddCheeseForm(Model model) {
+        model.addAttribute("title", "Add Cheese");
+        return "cheese/add";
+    }
 }
