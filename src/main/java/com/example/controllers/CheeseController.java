@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 
 @Controller
+@RequestMapping("cheese")
 public class CheeseController {
 
+    // Request path: /cheese
     @RequestMapping(value = "")
-    @ResponseBody
     public String index() {
-        return "My Cheese";
-
+        return "index";
     }
 }
